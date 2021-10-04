@@ -1,0 +1,113 @@
+/* Get rid of all default margins and padding so we can manipulate it to our liking */
+body {
+	margin: 0;
+	padding-top: 7em;
+}
+
+#background {
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+	position: absolute;
+	background: transparent url(../images/bg.png) space 0 0;
+	background-size: 10%;
+	background-repeat: repeat;
+	opacity: 0.05;
+}
+
+/* Keeps the header and the footer similar the same to avoid contrasting designs/colors */
+#header, #footer {
+	/* Appear in front of elements with a z-index of 0 */
+    z-index: 1; 
+
+	/* Color of the pepperoni on the image */
+    background-color: #8A1412;
+
+	/* Span the entire viewspace */
+    width: 100%; 
+
+    /* Fixes everything inside of the header to the top of the viewspace */
+    position: fixed;
+
+	/* Text color.  White is very legible on maroon/red */
+	color: white;
+	
+	/* Apparently we include this when we have things to the left/right of each other..? */
+	box-sizing: border-box;
+}
+
+#header {
+	/* Removes empty space above the element */
+    top: 0; 
+	
+	/* Declare any element inside of the header flexy */
+    display: flex;
+    flex-flow: row wrap;
+
+	/* Keeps elements in the same div from going  */
+	white-space: nowrap;
+
+	/* Keeps elements vertically centered */
+	align-items: baseline;
+}
+
+#title {
+	/* Push the title slightly away from the browser's left edge */
+	margin-left: 1rem;
+
+	/* We want the title to take 4/5 of the title bar */
+	flex-grow: 4;
+}
+
+#nav {
+	font-size: 150%;
+	flex-grow: 1;
+}
+
+#banner {
+	/* Push the banner down so it's not hiding under the header*/
+	margin-top: 5rem;
+	padding-top: 37%;
+	/* opacity: 0.5; */
+	background-image: url('/images/p7-2020-shaq-a-roni-compressed.jpg');
+	background-size: cover;
+	background-position: center;
+
+	color: white;
+}
+
+#content {
+	position: relative;
+	/* Bottom padding so no elements hide under the footer */
+	padding-bottom: 2.5rem;
+}
+
+#content a {
+	color: blue;
+	text-decoration: underline;
+}
+
+#noticable {
+	margin: 0 10% 0 10%;
+}
+
+#noticable h2 {
+	margin: 1rem 10% 0 10%;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#footer {
+    /* Fixes everything inside of the footer to the bottom of the viewspace */
+	bottom: 0;
+
+	/* Prevents elements hiding under it */
+	height: 2rem;
+
+	text-align: center;
+	
+	line-height: 2rem;
+}

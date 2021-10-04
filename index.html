@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>LaptopHub - Find Your Perfect Laptop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Import stylesheets -->
+	<!-- HW 01 Main stylesheet-->
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- HW 02 NavRouter stylesheet -->
+	<link rel="stylesheet" href="css/NavRouter.css">
+	<!-- <link rel="stylesheet" href="css/obj.css"> -->
+
+	<!-- HW 03 Component stylesheet -->
+	<link rel="stylesheet" href="css/productsContainer.css">
+	<link rel="stylesheet" href="css/productItem.css">
+</head>
+
+<body>
+	<div id="background"></div>
+
+	<div id="header">
+		<!-- Header title -->
+		<div id="title">
+			<h1>LaptopHub</h1>
+		</div>
+
+		<!-- Header navigation bar -->
+		<div id="nav"></div>
+	</div>
+
+	<!-- No content needed as it's a background image for the future -->
+	<!--<div id="banner">Pizza so good you'll come back!</div>-->
+
+	<div id="content"></div>
+
+	<div id="footer">
+		Ayser Jamshidi
+	</div>
+
+	<!-- HW 02 -->
+	<!-- NavRouter implementation -->
+	<script src="js/reusable/MakeNavRouter.js"></script>
+	<!-- <script src="js/reusable/MakeObj.js"></script> --> <!-- Replaced in HW 03 -->
+
+	<!-- NavRouter components -->
+	<script src="js/components/blog.js"></script>
+	<script src="js/components/home.js"></script>
+	<!-- <script src="js/components/objContent.js"></script> --> <!-- Replaced in HW 03 -->
+
+	<!-- HW 03 -->
+	<!-- Additional NavRouter implementation -->
+	<script src="js/reusable/MakeLaptop.js"></script>
+
+	<!-- Additional NavRouter component -->
+	<script src="js/components/twoLaptops.js"></script>
+
+
+	<!-- Nav bar links -->
+	<script>
+		var myNavList = [{
+				linkText: "Home",
+				linkURL: "#/home",
+				action: home
+			},
+			{
+				linkText: " | "
+			},
+			{
+				header: "Account",
+				subMenu: [{
+						linkText: "Register"
+					},
+					{
+						linkText: "Log In"
+					},
+					{
+						linkText: "Log Out"
+					},
+					{
+						linkText: "Profile"
+					}
+				]
+			},
+			{
+				linkText: " | "
+			},
+			{
+				header: "Search",
+				subMenu: [{
+						linkText: "JS Objects",
+						linkURL: "#/twoLaptops",
+						action: twoLaptops
+					},
+					{
+						linkText: "Slide Show"
+					},
+					{
+						linkText: "Click Sort"
+					}
+				]
+			},
+			{
+				linkText: " | "
+			},
+			{
+				header: "Tutorial",
+				subMenu: [{
+						linkText: "Proposal"
+					},
+					{
+						linkText: "Proof Of Concept"
+					},
+					{
+						linkText: "Demo"
+					},
+					{
+						linkText: "Tutorial Home"
+					}
+				]
+			},
+			{
+				linkText: " | "
+			},
+			{
+				linkText: "Blog",
+				linkURL: "#/blog",
+				action: blog
+			}
+		];
+
+		var myNav = MakeNavRouter({
+			navId: "nav", // this is where the nav bar will be injected
+			navList: myNavList, // the list of link objects (linkText, linkURL, actions)
+			contentId: "content", // the id where content is to be injected
+			startLink: "#/home" // routing will set this as the first link. 
+		});
+	</script>
+</body>
+
+</html>

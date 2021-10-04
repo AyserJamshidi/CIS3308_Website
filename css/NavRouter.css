@@ -1,0 +1,88 @@
+/* Required to keep any links and splitters inside of the nav router in-line and properly aligned when concaving */
+/* #nav .NavRouter div {
+    white-space: nowrap;
+	display: inline;
+} */
+
+#nav a, #nav div {
+	color: white;
+	text-decoration: none;
+}
+
+/* Hover color for every odd NavGroup element, excludes the splitters */
+#nav .NavRouter .NavGroup:nth-child(odd) a:hover, 
+/* Hover color for every MenuHeader */
+#nav .NavRouter .NavGroup .MenuHeader:hover {
+	color: lightgray;
+	text-decoration: none;
+}
+
+/* Hover color for every sub-menu element */
+#nav .NavRouter .NavGroup .SubMenu a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+#nav .NavRouter .NavGroup {
+
+    /* .NavGroup is a parent of SubMenu. Since we want to right justify the SubMenu with its parent,
+    we assign "position relative" to .NavGroup and "position absolute" to the .SubMenu      */ 
+    position: relative;  
+
+    /*border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;*/
+    margin-right:0.1rem;
+    padding:0.35rem;
+    padding-top:0.45rem;
+    padding-bottom:0.25rem;
+
+    /* "display:inline-block" treats/positions divs like words (bottom justified)
+    instead of like block/paragraph elements  (top justified) */
+    display: inline-block;
+
+    font-size: 1rem;
+    letter-spacing:0.05rem;
+    font-weight:bold;
+    cursor: pointer;  /* mouse pointer turns to "hand" when user hovers over a NavGroup */
+}
+
+#nav .NavRouter .show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#nav .NavRouter .hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#nav .NavRouter .SubMenu a { 
+    text-decoration: none;  /* Do not want links in the NavRouter to be underlined */   
+    color:black;
+    font-size: 0.75rem;
+    display: block;         /* all SubMenu links start on a new line */
+    border-bottom: 1px solid  #AAAAAA; /* a little darker than the submenu background */
+}
+
+#nav .NavRouter .SubMenu {
+
+    letter-spacing: 0.05rem; /* space out the letters a little bit */
+    line-height: 1.25rem;
+
+    margin-top: 0.5rem; /* start the SubMenu a little lower from the dropHeader */
+    padding: 0.25rem 0.5rem; /* first is top/bottom, second is left/right */
+
+    background-color:  #CCDDEE; /* #CCCCCC;*/
+
+    border-radius: 0.25rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.6);
+
+    /* animate hiding/showing */
+    transition: all 300ms ease 0s;
+
+    /* position absolute aligns with its 1st non static parent (.NavGroup)  */
+    position: absolute;
+    right: 0.75rem;  /* aligns right this absolute element with its relative parent */
+
+    z-index: 3;  /* higher z-index places the element on top, not underneath */
+}
