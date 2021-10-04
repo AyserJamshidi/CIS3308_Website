@@ -1,7 +1,5 @@
 function twoLaptops() {
-    "use strict";
-
-var content = `
+	var content = `
         <div id="noticable">
         <h2>Example for JS HW03</h2>
         <p>

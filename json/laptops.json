@@ -1,0 +1,62 @@
+[
+	{
+		"webUserEmail": "tuk51981@temple.edu",
+		"laptopId": 1,
+		"name": "ASUS - ROG Zephyrus 15.6\" QHD Gaming Laptop - AMD Ryzen 9 - 16GB Memory - NVIDIA GeForce RTX 3070 - 1TB SSD - Eclipse Grey - Eclipse Grey",
+		"modelNumber": "GA503QR-211.ZG15",
+		"imageURL": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6448/6448848_sd.jpg",
+		"releaseDate": "2021-05-26",
+		"price": 1850,
+		"likes": 0,
+		"dislikes": 0,
+		"averageRating": 0
+	},
+	{
+		"webUserEmail": "tuk51981@temple.edu",
+		"laptopId": 2,
+		"name": "ASUS - ROG Zephyrus 14\" Gaming Laptop - AMD Ryzen 9 - 16GB Memory - NVIDIA GeForce RTX 3060 - 1TB SSD - Moonlight White",
+		"modelNumber": "GA401QM-211.ZG14",
+		"imageURL": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452913_sd.jpg",
+		"releaseDate": "2021-05-26",
+		"price": 1550,
+		"likes": 0,
+		"dislikes": 0,
+		"averageRating": 0
+	},
+	{
+		"webUserEmail": "tuk51981@temple.edu",
+		"laptopId": 6,
+		"name": "ASUS - ROG 16\" WQXGA 165Hz Gaming Laptop - Intel Core i9 - 16GB Memory - NVIDIA RTX3060 - 1TB SSD - Off Black",
+		"modelNumber": "GU603HM-211.ZM16",
+		"imageURL": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464203_sd.jpg",
+		"releaseDate": "2021-05-26",
+		"price": 1850,
+		"likes": 0,
+		"dislikes": 0,
+		"averageRating": 0
+	},
+	{
+		"webUserEmail": "tuk51981@temple.edu",
+		"laptopId": 7,
+		"name": "ASUS - ROG Zephyrus G14 14\" Laptop - AMD Ryzen 7 - 16GB Memory - NVIDIA GeForce GTX 1650 - 512GB SSD",
+		"modelNumber": "GA401QH-211.ZG14BL",
+		"imageURL": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6466/6466255_sd.jpg",
+		"releaseDate": "2021-05-26",
+		"price": 1150,
+		"likes": 0,
+		"dislikes": 0,
+		"averageRating": 0
+	},
+	{
+		"webUserEmail": "tuk51981@temple.edu",
+		"laptopId": 8,
+		"name": "ASUS - ROG Strix G15 Advantage Edition 15.6\" FHD Gaming Laptop - AMD Ryzen 9-5900HX - 16GB Memory - Radeon RX 6800M - 512GB SSD",
+		"modelNumber": "G513QY-212.SG15",
+		"imageURL": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6466/6466550_sd.jpg",
+		"releaseDate": "2021-03-02",
+		"price": 1650,
+		"likes": 0,
+		"dislikes": 0,
+		"averageRating": 0
+	}
+]

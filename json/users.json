@@ -1,0 +1,56 @@
+[
+    {
+        "webUserId": "6",
+        "userEmail": "test1@nut.com",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/abha.jpg",
+        "membershipFee": "0.00",
+        "birthday": "00/00/0000",
+		"userRoleId": 1,
+        "userRoleType": "testRole1"
+    },
+    {
+        "webUserId": "7",
+        "userEmail": "test2@nut.com",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/dominic.jpg",
+        "membershipFee": "0.00",
+        "birthday": "00/00/0000",
+		"userRoleId": 1,
+        "userRoleType": "testRole1"
+    },
+    {
+        "webUserId": "8",
+        "userEmail": "test3@nut.com",
+        "image": null,
+        "membershipFee": null,
+        "birthday": null,
+		"userRoleId": 1,
+        "userRoleType": "testRole1"
+    },
+    {
+        "webUserId": "9",
+        "userEmail": "test4@nut.com",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/eduard.jpg",
+        "membershipFee": "0.00",
+        "birthday": "00/00/0000",
+		"userRoleId": 2,
+        "userRoleType": "testRole2"
+    },
+    {
+        "webUserId": "10",
+        "userEmail": "test5@nut.com",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/frank.jpg",
+        "membershipFee": "0.00",
+        "birthday": "00/00/0000",
+		"userRoleId": 2,
+        "userRoleType": "testRole2"
+    },
+    {
+        "webUserId": "12",
+        "userEmail": "tuk51981@temple.edu",
+        "image": "http://cis-linux2.temple.edu/~sallyk/pics_users/james_du.jpg",
+        "membershipFee": "0.00",
+        "birthday": "11/02/1995",
+		"userRoleId": 3,
+        "userRoleType": "Admin"
+    }
+]

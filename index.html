@@ -43,6 +43,7 @@
 
 	<!-- HW 02 -->
 	<!-- NavRouter implementation -->
+	<script>"use strict"</script>
 	<script src="js/reusable/MakeNavRouter.js"></script>
 	<!-- <script src="js/reusable/MakeObj.js"></script> --> <!-- Replaced in HW 03 -->
 
@@ -57,6 +58,16 @@
 
 	<!-- Additional NavRouter component -->
 	<script src="js/components/twoLaptops.js"></script>
+
+	<!-- HW 05 -->
+	<!-- Additional implementations -->
+	<script src="js/reusable/ajax.js"></script>
+	<script src="js/reusable/SortableTableUtils.js"></script>
+	<script src="js/reusable/MakeClickSortTable.js"></script>
+
+	<!-- Additional NavRouter components -->
+	<script src="js/components/clickSortUserContent.js"></script>
+	<script src="js/components/clickSortLaptopContent.js"></script>
 
 
 	<!-- Nav bar links -->
@@ -90,10 +101,21 @@
 			},
 			{
 				header: "Search",
-				subMenu: [{
+				subMenu: [
+					{
 						linkText: "JS Objects",
 						linkURL: "#/twoLaptops",
 						action: twoLaptops
+					},
+					{
+						linkText: "Users",
+						linkURL: "#/clickSortUserContent",
+						action: clickSortUserContent
+					},
+					{
+						linkText: "Laptops",
+						linkURL: "#/clickSortLaptopContent",
+						action: clickSortLaptopContent
 					},
 					{
 						linkText: "Slide Show"
